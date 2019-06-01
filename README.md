@@ -73,7 +73,7 @@ Examples:
 **ShockWave_WS**  
 ![Imgur](https://i.imgur.com/c2EZ0gZ.gif)
 
-**ShockWave_PP**
+**ShockWave_PP**  
 ![Imgur](https://i.imgur.com/Ys10Ex8.gif)
 
 ## ShockWave_WS
