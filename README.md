@@ -1,68 +1,123 @@
-
-
-ShockWave_LWRP
+ Shockwave_URP
 -------------------------------------
 [Asset Store Link](http://u3d.as/1xYk)  
-© 2017 Justin Garza
+
+© 2020 Justin Garza
 
 PLEASE LEAVE A REVIEW OR RATE THE PACKAGE IF YOU FIND IT USEFUL!
 Enjoy! :)
 
+
 ## Table of Contents
 
-<!--TOC-->
-- [ShockWave_LWRP](#shockwavelwrp)
+<!-- TOC -->
+
+- [Shockwave_URP](#shockwave_urp)
 - [Table of Contents](#table-of-contents)
 - [Contact](#contact)
-- [Terms of Use](#terms-of-use)
 - [Description Features](#description-features)
-- [Requirements](#requirements)
+- [Set Up](#set-up)
+- [prefabs](#prefabs)
+    - [shockwave.prefab](#shockwaveprefab)
+        - [ShockWaveAnim.cs](#shockwaveanimcs)
+        - [shockwave.shadergraph](#shockwaveshadergraph)
+- [other scripts](#other-scripts)
+    - [GenerateShockWave.cs](#generateshockwavecs)
+    - [ShootOnClick.cs](#shootonclickcs)
+    - [DestroyAfter.cs](#destroyaftercs)
+- [Videos](#videos)
+- [Terms of Use](#terms-of-use)
 
-<!--TOC-->
+<!-- /TOC -->
 
-## Contact  
+## Contact
 
 Questions, suggestions, help needed?  
 Contact me at:  
 Email: jgarza9788@gmail.com  
 Cell: 1-818-251-0647  
-Contact Info: [justingarza.info/contact](http://justingarza.info/contact/)
+Contact Info: [jgarza9788 - UnityPortfolio](https://github.com/jgarza9788/UnityPortfolio)  
 
-## Terms of Use
-
-You are free to add this asset to any game you’d like
-However:  
-please put my name in the credits, or in the special thanks section. :)  
-please do not re-distribute. 
 
 ## Description Features
 
-This Asset is 3 similar assets.
-* [ShockWave_PP](https://github.com/jgarza9788/ShockWave_LWRP_Demo/blob/master/ShockWave_PP.md)
-    * This creates a shockwave in screen space using the Unity Post Processing Method.
-    * Easily customize effect
-        * Size
-        * Color
-        * Distortion
-        * Speed
-* [ShockWave_PPWS](https://github.com/jgarza9788/ShockWave_LWRP_Demo/blob/master/ShockWave_PPWS.md)
-    * This creates a shockwave in world space using the Unity Post Processing Method.
-    * Easily customize effect
-        * Size
-        * Distortion
-        * Speed
-* [ShockWave_WS](https://github.com/jgarza9788/ShockWave_LWRP_Demo/blob/master/ShockWave_WS.md)
-    * This creates a shockwave in world space using the Unity LWRP's feature renderers
-    * Easily customize effect
-        * Size
-        * Distortion
-        * Speed
+Easily customize the animation's
+* speed
+* radius
+* wavesize (thickness)
+* amplitude (distortion amount)
+* color
 
-## Requirements
-* Lightweight Render Pipeline (5.10.0)
-* Shader Graph (5.10.0)
-* Post Processing (2.1.6)
 
-![Imgur](https://i.imgur.com/VAjPArs.png)
+## Set Up
+Use the URP_Asset  
+it's in ***\ShockWave_URP\Assets\URP**
 
+note: this will do several things.
+1. Allow us to use _CameraOpaqueTexture
+    * we are distorting this texture to make the effect
+
+![Imgur](https://i.imgur.com/HgPbaSN.png)
+
+## prefabs
+
+### shockwave.prefab
+this is the main prefab to generdate the effect.
+
+#### ShockWaveAnim.cs
+this will animate the settings in the shader.
+
+* Material
+    * the material we will copy from
+* Shader
+    * the shader we will use
+* Speed
+    * how fast it will play back
+* T
+    * the current time
+* Radius Anim
+    * the animation curve for the radius
+* Wavesize Anim
+    * the animation curve for the wavesize
+* Amplitude Anim
+    * the animation curve for the amplitude
+* Color Anim
+    * the color over time during the animation
+* Sat Anim
+    * the animation curve for the color's saturation
+* Destory When Done
+    * weather the object will be destroyed when done
+* Time Preview_In Edit Mode Only
+    * slide this during edit more to see the animation
+
+
+#### shockwave.shadergraph
+this is the shader that causes the effect.
+
+![Imgur](https://i.imgur.com/00rpXaa.png)
+
+## other scripts
+
+### GenerateShockWave.cs
+this will instantiate the shockwave based on where the projectile hits.
+
+### ShootOnClick.cs
+shoots the projectile
+
+### DestroyAfter.cs
+destroys an object after X time.
+
+## Videos
+[Demo1](https://www.youtube.com/watch?v=lg5CAIxP-ww)
+[Demo2](https://www.youtube.com/watch?v=Z_wAd-TFDAY)
+
+
+
+## Terms of Use
+
+Required:
+please follow [Unity's EULA](https://unity3d.com/legal/as_terms) 
+
+Suggestion/Optional:
+please put my name in the credits, or in the special thanks section. :)  
 
