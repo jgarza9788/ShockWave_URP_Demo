@@ -1,12 +1,12 @@
- Shockwave_URP
+Shockwave_URP
 -------------------------------------
+
 [Asset Store Link](http://u3d.as/1xYk)  
 
 © 2020 Justin Garza
 
 PLEASE LEAVE A REVIEW OR RATE THE PACKAGE IF YOU FIND IT USEFUL!
 Enjoy! :)
-
 
 ## Table of Contents
 
@@ -27,6 +27,10 @@ Enjoy! :)
     - [DestroyAfter.cs](#destroyaftercs)
 - [Videos](#videos)
 - [Terms of Use](#terms-of-use)
+- [FAQs](#faqs)
+    - [the ShockWave is grey!](#the-shockwave-is-grey)
+        - [example](#example)
+        - [solution](#solution)
 
 <!-- /TOC -->
 
@@ -38,60 +42,63 @@ Email: jgarza9788@gmail.com
 Cell: 1-818-251-0647  
 Contact Info: [jgarza9788 - UnityPortfolio](https://github.com/jgarza9788/UnityPortfolio)  
 
-
 ## Description Features
 
 Easily customize the animation's
+
 * speed
 * radius
 * wavesize (thickness)
 * amplitude (distortion amount)
 * color
 
-
 ## Set Up
+
 Use the URP_Asset  
 it's in ***\ShockWave_URP\Assets\URP**
 
 note: this will do several things.
+
 1. Allow us to use _CameraOpaqueTexture
-    * we are distorting this texture to make the effect
+   * we are distorting this texture to make the effect
 
 ![Imgur](https://i.imgur.com/HgPbaSN.png)
 
 ## prefabs
 
 ### shockwave.prefab
+
 this is the main prefab to generdate the effect.
 
 #### ShockWaveAnim.cs
+
 this will animate the settings in the shader.
 
 * Material
-    * the material we will copy from
+  * the material we will copy from
 * Shader
-    * the shader we will use
+  * the shader we will use
 * Speed
-    * how fast it will play back
+  * how fast it will play back
 * T
-    * the current time
+  * the current time
 * Radius Anim
-    * the animation curve for the radius
+  * the animation curve for the radius
 * Wavesize Anim
-    * the animation curve for the wavesize
+  * the animation curve for the wavesize
 * Amplitude Anim
-    * the animation curve for the amplitude
+  * the animation curve for the amplitude
 * Color Anim
-    * the color over time during the animation
+  * the color over time during the animation
 * Sat Anim
-    * the animation curve for the color's saturation
+  * the animation curve for the color's saturation
 * Destory When Done
-    * weather the object will be destroyed when done
+  * weather the object will be destroyed when done
 * Time Preview_In Edit Mode Only
-    * slide this during edit more to see the animation
-
+  * slide this during edit more to see the animation
 
 #### shockwave.shadergraph
+
 this is the shader that causes the effect.
 
 ![Imgur](https://i.imgur.com/00rpXaa.png)
@@ -99,19 +106,21 @@ this is the shader that causes the effect.
 ## other scripts
 
 ### GenerateShockWave.cs
+
 this will instantiate the shockwave based on where the projectile hits.
 
 ### ShootOnClick.cs
+
 shoots the projectile
 
 ### DestroyAfter.cs
+
 destroys an object after X time.
 
 ## Videos
+
 [Demo1](https://www.youtube.com/watch?v=lg5CAIxP-ww)
 [Demo2](https://www.youtube.com/watch?v=Z_wAd-TFDAY)
-
-
 
 ## Terms of Use
 
@@ -120,4 +129,21 @@ please follow [Unity's EULA](https://unity3d.com/legal/as_terms)
 
 Suggestion/Optional:
 please put my name in the credits, or in the special thanks section. :)  
+
+
+
+## FAQs
+
+### the ShockWave is grey!
+
+#### example
+
+![Image](https://i.imgur.com/erOB8di.png)
+
+#### solution
+
+change the settings of one of the camera(s) so that it creates a CameraOpaqueTexture (see below)
+
+![Imgur](https://i.imgur.com/vk3a1D7.png)
+
 
