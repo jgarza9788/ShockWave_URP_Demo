@@ -92,6 +92,10 @@ this will animate the settings in the shader.
   * the color over time during the animation
 * Sat Anim
   * the animation curve for the color's saturation
+* Render Texture  
+  * this is the render texture that will be used within the shader
+  * if this is blank an opaque texture will be used...  
+    *  thus sprites and transparent objects will not show
 * Destory When Done
   * weather the object will be destroyed when done
 * Time Preview_In Edit Mode Only
@@ -101,7 +105,15 @@ this will animate the settings in the shader.
 
 this is the shader that causes the effect.
 
-![Imgur](https://i.imgur.com/00rpXaa.png)
+![Imgur](https://imgur.com/zlutoFP.png)
+
+>Note:  
+if useRenderTexture is true, the render texture will be used.  
+if false, the script will use an opaque texture.  
+--  
+the opaque render texture will not show transparent objects or sprites.  
+
+
 
 ## other scripts
 
