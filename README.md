@@ -10,29 +10,28 @@ Enjoy! :)
 
 ## Table of Contents
 
-<!-- TOC -->
+<!--TOC-->
+* [Shockwave_URP](#shockwave_urp)
+	* [Table of Contents](#table-of-contents)
+	* [Contact](#contact)
+	* [Description Features](#description-features)
+	* [Set Up](#set-up)
+	* [prefabs](#prefabs)
+		* [shockwave.prefab](#shockwave.prefab)
+			* [ShockWaveAnim.cs](#shockwaveanim.cs)
+			* [shockwave.shadergraph](#shockwave.shadergraph)
+	* [other scripts](#other-scripts)
+		* [GenerateShockWave.cs](#generateshockwave.cs)
+		* [ShootOnClick.cs](#shootonclick.cs)
+		* [DestroyAfter.cs](#destroyafter.cs)
+	* [Videos](#videos)
+	* [Terms of Use](#terms-of-use)
+	* [FAQs](#faqs)
+		* [the ShockWave is grey!](#the-shockwave-is-grey!)
+			* [example](#example)
+			* [solution](#solution)
 
-- [Shockwave_URP](#shockwave_urp)
-- [Table of Contents](#table-of-contents)
-- [Contact](#contact)
-- [Description Features](#description-features)
-- [Set Up](#set-up)
-- [prefabs](#prefabs)
-    - [shockwave.prefab](#shockwaveprefab)
-        - [ShockWaveAnim.cs](#shockwaveanimcs)
-        - [shockwave.shadergraph](#shockwaveshadergraph)
-- [other scripts](#other-scripts)
-    - [GenerateShockWave.cs](#generateshockwavecs)
-    - [ShootOnClick.cs](#shootonclickcs)
-    - [DestroyAfter.cs](#destroyaftercs)
-- [Videos](#videos)
-- [Terms of Use](#terms-of-use)
-- [FAQs](#faqs)
-    - [the ShockWave is grey!](#the-shockwave-is-grey)
-        - [example](#example)
-        - [solution](#solution)
-
-<!-- /TOC -->
+<!--TOC-->
 
 ## Contact
 
