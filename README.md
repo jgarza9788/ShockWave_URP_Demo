@@ -23,20 +23,21 @@ Enjoy! :)
 - [Description Features](#description-features)
 - [Set Up](#set-up)
 - [prefabs](#prefabs)
-	- [shockwave.prefab](#shockwaveprefab)
-		- [ShockWaveAnim.cs](#shockwaveanimcs)
-		- [shockwave.shadergraph](#shockwaveshadergraph)
+  - [shockwave.prefab](#shockwaveprefab)
+    - [ShockWaveAnim.cs](#shockwaveanimcs)
+    - [shockwave.shadergraph](#shockwaveshadergraph)
 - [if false, the script will use an opaque texture.](#if-false-the-script-will-use-an-opaque-texture)
 - [other scripts](#other-scripts)
-	- [GenerateShockWave.cs](#generateshockwavecs)
-	- [ShootOnClick.cs](#shootonclickcs)
-	- [DestroyAfter.cs](#destroyaftercs)
+  - [createRT.cs](#creatertcs)
+  - [GenerateShockWave.cs](#generateshockwavecs)
+  - [ShootOnClick.cs](#shootonclickcs)
+  - [DestroyAfter.cs](#destroyaftercs)
 - [Videos](#videos)
 - [Terms of Use](#terms-of-use)
 - [FAQs](#faqs)
-	- [the ShockWave is grey!](#the-shockwave-is-grey)
-		- [example](#example)
-		- [solution](#solution)
+  - [the ShockWave is grey!](#the-shockwave-is-grey)
+    - [example](#example)
+    - [solution](#solution)
 
 <!--TOC-->
 
@@ -98,6 +99,9 @@ this will animate the settings in the shader.
   * the color over time during the animation
 * Sat Anim
   * the animation curve for the color's saturation
+* renderTexture_assetpath
+  * this is the path were the RenderTexture can be loaded from 
+    * make blank if you don't plan to use a Render Texture
 * Render Texture  
   * this is the render texture that will be used within the shader
   * if this is blank an opaque texture will be used...  
@@ -122,6 +126,11 @@ the opaque render texture will not show transparent objects or sprites.
 
 
 ## other scripts
+
+### createRT.cs  
+creates a RenderTexture and adds it to the Camera.
+the RenderTexture will be created based on the current screensize.
+
 
 ### GenerateShockWave.cs
 
